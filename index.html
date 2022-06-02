@@ -5,19 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/main.css"/>
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/script.js" ></script>
 </head>
 <body>
     <div class="contenedor">
-        <form action="#">
-        <label>ingrese cantidad</label><input type="text" id ="cantidad" /> 
-        <input type="text" disabled/>
+        <h1 id="titulo">Esta es una tienda de juegos </h1>
+       
+            <div class="contenedorJuegos">
+            <div class="contenedorJuego">
+                <img src="Img/dbzJuego.jpg" class="img">
+                <div>
+                    <label>Precio</label> <p id="precioDbz">$30.000</p>
+                </div>
+                <div>
+                    <label>Cantidad </label><input id="cantidadDbz" type="number" min="0"max="5">
+                </div>
+            </div>
+
+            <div class="contenedorJuego">
+                <img src="Img/gtaJuego.jpg" class="img">
+                <div>
+                    <label>Precio</label> <p id="precioGta">$20.000</p>
+                </div>
+                <div>
+                    <label>Cantidad </label><input id="cantidadGta"type="number"  min="0"max="5">
+                </div>
+            </div>
+            <div class="contenedorJuego">
+                <img src="Img/unchar.png" class="img">
+                <div>
+                    <label>Precio </label><p id="precioUnc">$40.000</p>
+                </div>
+                <div>
+                    <label>Cantidad </label><input id="cantidadUnc" type="number"  min="0"max="5">
+                </div>
+            </div>
+        </div>
         <br>
-        <button type="submit" id='boton'>Comprar</button>
-        </form>
+            <button type="submit" id='boton' class="centrar">Comprar</button>
+        
     </div>
-
 </body>
-
 </html>
